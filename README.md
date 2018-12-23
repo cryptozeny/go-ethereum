@@ -9,8 +9,6 @@ https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/6874
 [![Travis](https://travis-ci.org/ethereumprogpow/ethereumprogpow.svg?branch=master)](https://travis-ci.org/ethereumprogpow/ethereumprogpow)
 [![Discord](https://img.shields.io/badge/discord-join%20chat-blue.svg)](https://discord.gg/ZYfFbMH)
 
-<p align="center"><strong><a href="https://github.com/ethereumprogpow/ethereumprogpow/releases/latest">» Download the latest release «</a></strong></p>
-
 ## Building the source
 
 Building geth requires both a Go (version 1.9 or later) and a C compiler. (For ubuntu install build-essential and golang-1.10-go from apt package manager)
