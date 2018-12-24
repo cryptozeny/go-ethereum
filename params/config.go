@@ -28,6 +28,7 @@ var (
 	MainnetGenesisHash = common.HexToHash("0xd4e56740f876aef8c010b86a40d5f56745a118d0906a34e69aec8c0db1cb8fa3")
 	TestnetGenesisHash = common.HexToHash("0x41941023680923e0fe4d74a34bdac8141f2540e3ae90623718e47d66d1ca4a2d")
 	RinkebyGenesisHash = common.HexToHash("0x6341fd3daf94b748c72ced5a5b26028f2474f5f00d824504e4fa37a75767e177")
+	GangnamGenesisHash = common.HexToHash("0x9a2a80100a4362bbf61d9c20c0fd6af6e3bc276c4d083e1547b35d89a4bfe7e4")
 )
 
 var (
@@ -105,6 +106,22 @@ var (
 		SectionHead:  common.HexToHash("0xec8147d43f936258aaf1b9b9ec91b0a853abf7109f436a23649be809ea43d507"),
 		CHTRoot:      common.HexToHash("0xd92703b444846a3db928e87e450770e5d5cbe193131dc8f7c4cf18b4de925a75"),
 		BloomRoot:    common.HexToHash("0xff45a6f807138a2cde0cea0c209d9ce5ad8e43ccaae5a7c41af801bb72a1ef96"),
+	}
+
+	// GangnamChainConfig contains the chain parameters to run a node on the Gangnam test network.
+	GangnamChainConfig = &ChainConfig{
+		ChainID:             big.NewInt(43568),
+		HomesteadBlock:      big.NewInt(1),
+		DAOForkBlock:        nil,
+		DAOForkSupport:      true,
+		EIP150Block:         big.NewInt(2),
+		EIP150Hash:          common.HexToHash("0x6832abf09e23196b2abbf5b8230fe3cba0440903e87bda8c6eedd4b0b8773a26"),
+		EIP155Block:         big.NewInt(3),
+		EIP158Block:         big.NewInt(3),
+		ByzantiumBlock:      big.NewInt(4),
+		ConstantinopleBlock: big.NewInt(500),
+		ProgpowBlock:        big.NewInt(3000),
+		Ethash:              new(EthashConfig),
 	}
 
 	// AllEthashProtocolChanges contains every protocol change (EIPs) introduced
