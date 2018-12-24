@@ -1,29 +1,29 @@
-// Copyright 2015 The go-ethereum Authors
-// This file is part of the go-ethereum library.
+// Copyright 2015 The ethereumprogpow Authors
+// This file is part of the ethereumprogpow library.
 //
-// The go-ethereum library is free software: you can redistribute it and/or modify
+// The ethereumprogpow library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-ethereum library is distributed in the hope that it will be useful,
+// The ethereumprogpow library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
+// along with the ethereumprogpow library. If not, see <http://www.gnu.org/licenses/>.
 
 package node
 
 import (
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts"
+	"github.com/ethereumprogpow/ethereumprogpow/ethdb"
+	"github.com/ethereumprogpow/ethereumprogpow/event"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p"
+	"github.com/ethereumprogpow/ethereumprogpow/rpc"
 )
 
 // ServiceContext is a collection of service independent options inherited from

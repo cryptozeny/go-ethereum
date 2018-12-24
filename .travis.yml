@@ -1,5 +1,5 @@
 language: go
-go_import_path: github.com/ethereum/go-ethereum
+go_import_path: github.com/ethereumprogpow/ethereumprogpow
 sudo: false
 matrix:
   include:

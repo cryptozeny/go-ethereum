@@ -1,18 +1,18 @@
-// Copyright 2018 The go-ethereum Authors
-// This file is part of the go-ethereum library.
+// Copyright 2018 The ethereumprogpow Authors
+// This file is part of the ethereumprogpow library.
 //
-// The go-ethereum library is free software: you can redistribute it and/or modify
+// The ethereumprogpow library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-ethereum library is distributed in the hope that it will be useful,
+// The ethereumprogpow library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
+// along with the ethereumprogpow library. If not, see <http://www.gnu.org/licenses/>.
 
 // +build none
 
@@ -28,20 +28,20 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/fdlimit"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts/keystore"
+	"github.com/ethereumprogpow/ethereumprogpow/common"
+	"github.com/ethereumprogpow/ethereumprogpow/common/fdlimit"
+	"github.com/ethereumprogpow/ethereumprogpow/consensus/ethash"
+	"github.com/ethereumprogpow/ethereumprogpow/core"
+	"github.com/ethereumprogpow/ethereumprogpow/core/types"
+	"github.com/ethereumprogpow/ethereumprogpow/crypto"
+	"github.com/ethereumprogpow/ethereumprogpow/eth"
+	"github.com/ethereumprogpow/ethereumprogpow/eth/downloader"
+	"github.com/ethereumprogpow/ethereumprogpow/log"
+	"github.com/ethereumprogpow/ethereumprogpow/node"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/enode"
+	"github.com/ethereumprogpow/ethereumprogpow/params"
 )
 
 func main() {

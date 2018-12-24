@@ -1,18 +1,18 @@
-// Copyright 2016 The go-ethereum Authors
-// This file is part of the go-ethereum library.
+// Copyright 2016 The ethereumprogpow Authors
+// This file is part of the ethereumprogpow library.
 //
-// The go-ethereum library is free software: you can redistribute it and/or modify
+// The ethereumprogpow library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-ethereum library is distributed in the hope that it will be useful,
+// The ethereumprogpow library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
+// along with the ethereumprogpow library. If not, see <http://www.gnu.org/licenses/>.
 
 // +build none
 
@@ -25,11 +25,11 @@ import (
 	"io/ioutil"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind/backends"
-	"github.com/ethereum/go-ethereum/contracts/chequebook/contract"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts/abi/bind"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts/abi/bind/backends"
+	"github.com/ethereumprogpow/ethereumprogpow/contracts/chequebook/contract"
+	"github.com/ethereumprogpow/ethereumprogpow/core"
+	"github.com/ethereumprogpow/ethereumprogpow/crypto"
 )
 
 var (

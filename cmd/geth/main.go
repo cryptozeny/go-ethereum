@@ -1,18 +1,18 @@
-// Copyright 2014 The go-ethereum Authors
-// This file is part of go-ethereum.
+// Copyright 2014 The ethereumprogpow Authors
+// This file is part of ethereumprogpow.
 //
-// go-ethereum is free software: you can redistribute it and/or modify
+// ethereumprogpow is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-ethereum is distributed in the hope that it will be useful,
+// ethereumprogpow is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-ethereum. If not, see <http://www.gnu.org/licenses/>.
+// along with ethereumprogpow. If not, see <http://www.gnu.org/licenses/>.
 
 // geth is the official command-line client for Ethereum.
 package main
@@ -28,16 +28,16 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/console"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts/keystore"
+	"github.com/ethereumprogpow/ethereumprogpow/cmd/utils"
+	"github.com/ethereumprogpow/ethereumprogpow/console"
+	"github.com/ethereumprogpow/ethereumprogpow/eth"
+	"github.com/ethereumprogpow/ethereumprogpow/ethclient"
+	"github.com/ethereumprogpow/ethereumprogpow/internal/debug"
+	"github.com/ethereumprogpow/ethereumprogpow/log"
+	"github.com/ethereumprogpow/ethereumprogpow/metrics"
+	"github.com/ethereumprogpow/ethereumprogpow/node"
 	"gopkg.in/urfave/cli.v1"
 )
 
@@ -49,7 +49,7 @@ var (
 	// Git SHA1 commit hash of the release (set via linker flags)
 	gitCommit = ""
 	// The app that holds all commands and flags.
-	app = utils.NewApp(gitCommit, "the go-ethereum command line interface")
+	app = utils.NewApp(gitCommit, "the ethereumprogpow command line interface")
 	// flags that configure the node
 	nodeFlags = []cli.Flag{
 		utils.IdentityFlag,
@@ -171,7 +171,7 @@ func init() {
 	// Initialize the CLI app and start Geth
 	app.Action = geth
 	app.HideVersion = true // we have a command to print the version
-	app.Copyright = "Copyright 2013-2018 The go-ethereum Authors"
+	app.Copyright = "Copyright 2013-2018 The ethereumprogpow Authors"
 	app.Commands = []cli.Command{
 		// See chaincmd.go:
 		initCommand,

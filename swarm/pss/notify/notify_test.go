@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/pss"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv5"
+	"github.com/ethereumprogpow/ethereumprogpow/common/hexutil"
+	"github.com/ethereumprogpow/ethereumprogpow/crypto"
+	"github.com/ethereumprogpow/ethereumprogpow/log"
+	"github.com/ethereumprogpow/ethereumprogpow/node"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/enode"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/simulations"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/simulations/adapters"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/network"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/pss"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/state"
+	whisper "github.com/ethereumprogpow/ethereumprogpow/whisper/whisperv5"
 )
 
 var (

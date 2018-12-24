@@ -1,18 +1,18 @@
-// Copyright 2018 The go-ethereum Authors
-// This file is part of the go-ethereum library.
+// Copyright 2018 The ethereumprogpow Authors
+// This file is part of the ethereumprogpow library.
 //
-// The go-ethereum library is free software: you can redistribute it and/or modify
+// The ethereumprogpow library is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// The go-ethereum library is distributed in the hope that it will be useful,
+// The ethereumprogpow library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the go-ethereum library. If not, see <http://www.gnu.org/licenses/>.
+// along with the ethereumprogpow library. If not, see <http://www.gnu.org/licenses/>.
 
 package swarm
 
@@ -29,30 +29,30 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/chequebook"
-	"github.com/ethereum/go-ethereum/contracts/ens"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	httpapi "github.com/ethereum/go-ethereum/swarm/api/http"
-	"github.com/ethereum/go-ethereum/swarm/fuse"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/network/stream"
-	"github.com/ethereum/go-ethereum/swarm/pss"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock"
-	"github.com/ethereum/go-ethereum/swarm/swap"
-	"github.com/ethereum/go-ethereum/swarm/tracing"
+	"github.com/ethereumprogpow/ethereumprogpow/accounts/abi/bind"
+	"github.com/ethereumprogpow/ethereumprogpow/common"
+	"github.com/ethereumprogpow/ethereumprogpow/contracts/chequebook"
+	"github.com/ethereumprogpow/ethereumprogpow/contracts/ens"
+	"github.com/ethereumprogpow/ethereumprogpow/ethclient"
+	"github.com/ethereumprogpow/ethereumprogpow/metrics"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/enode"
+	"github.com/ethereumprogpow/ethereumprogpow/p2p/protocols"
+	"github.com/ethereumprogpow/ethereumprogpow/params"
+	"github.com/ethereumprogpow/ethereumprogpow/rpc"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/api"
+	httpapi "github.com/ethereumprogpow/ethereumprogpow/swarm/api/http"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/fuse"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/log"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/network"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/network/stream"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/pss"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/state"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/storage"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/storage/feed"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/storage/mock"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/swap"
+	"github.com/ethereumprogpow/ethereumprogpow/swarm/tracing"
 )
 
 var (

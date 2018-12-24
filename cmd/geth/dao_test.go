@@ -1,18 +1,18 @@
-// Copyright 2016 The go-ethereum Authors
-// This file is part of go-ethereum.
+// Copyright 2016 The ethereumprogpow Authors
+// This file is part of ethereumprogpow.
 //
-// go-ethereum is free software: you can redistribute it and/or modify
+// ethereumprogpow is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-ethereum is distributed in the hope that it will be useful,
+// ethereumprogpow is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-ethereum. If not, see <http://www.gnu.org/licenses/>.
+// along with ethereumprogpow. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -23,10 +23,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/ethereumprogpow/ethereumprogpow/common"
+	"github.com/ethereumprogpow/ethereumprogpow/core/rawdb"
+	"github.com/ethereumprogpow/ethereumprogpow/ethdb"
+	"github.com/ethereumprogpow/ethereumprogpow/params"
 )
 
 // Genesis block for nodes which don't care about the DAO fork (i.e. not configured)

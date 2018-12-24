@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"math/bits"
 
-	"github.com/ethereum/go-ethereum/crypto/sha3"
+	"github.com/ethereumprogpow/ethereumprogpow/crypto/sha3"
 )
 
 const (
